@@ -1,741 +1,98 @@
-
-local L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1
-L4_1 = game
-L4_1 = L4_1.Players
-L4_1 = L4_1.LocalPlayer
-L4_1 = L4_1.Character
-L4_1 = L4_1.Humanoid
-L4_1 = L4_1.RigType
-L5_1 = Enum
-L5_1 = L5_1.HumanoidRigType
-L5_1 = L5_1.R6
-if L4_1 == L5_1 then
-	L4_1 = workspace
-	L5_1 = math
-	L5_1 = L5_1.huge
-	L5_1 = -L5_1
-	L4_1.FallenPartsDestroyHeight = L5_1
-	L4_1 = wait
-	L4_1()
-	L4_1 = game
-	L4_1 = L4_1.Players
-	L4_1 = L4_1.LocalPlayer
-	L4_1 = L4_1.Character
-	L5_1 = game
-	L6_1 = L5_1
-	L5_1 = L5_1.GetService
-	L7_1 = "UserInputService"
-	L5_1 = (L5_1(L6_1, L7_1))
-	L6_1 = game
-	L7_1 = L6_1
-	L6_1 = L6_1.GetObjects
-	L8_1 = "rbxassetid://5904819435"
-	L6_1 = (L6_1(L7_1, L8_1))
-	L6_1 = L6_1[1]
-	thing = L6_1
-	L6_1 = thing
-	L6_1.Name = "Raw"
-	L6_1 = thing
-	L6_1.Parent = L4_1
-	L6_1 = L4_1.Animate
-	L7_1 = L6_1
-	L6_1 = L6_1.Clone
-	L6_1 = (L6_1(L7_1))
-	L7_1 = thing
-	L6_1.Parent = L7_1
-	L7_1 = pairs
-	L8_1 = L4_1.Animate
-	L9_1 = L8_1
-	L8_1 = L8_1.GetChildren
-	L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1 = L8_1(L9_1)
-	L7_1, L8_1, L9_1 = L7_1(L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1)
-	for L10_1, L11_1 in L7_1, L8_1, L9_1 do
-		L13_1 = L11_1
-		L12_1 = L11_1.Clone
-		L12_1 = (L12_1(L13_1))
-		L12_1.Parent = L6_1
-	end
-	L7_1 = L4_1.Torso
-	L7_1 = L7_1["Right Shoulder"]
-	L8_1 = L7_1
-	L7_1 = L7_1.Destroy
-	L7_1(L8_1)
-	L7_1 = L4_1.Torso
-	L7_1 = L7_1["Left Shoulder"]
-	L8_1 = L7_1
-	L7_1 = L7_1.Destroy
-	L7_1(L8_1)
-	L7_1 = L4_1.Torso
-	L7_1 = L7_1["Right Hip"]
-	L8_1 = L7_1
-	L7_1 = L7_1.Destroy
-	L7_1(L8_1)
-	L7_1 = L4_1.Torso
-	L7_1 = L7_1["Left Hip"]
-	L8_1 = L7_1
-	L7_1 = L7_1.Destroy
-	L7_1(L8_1)
-	L7_1 = thing
-	L8_1 = L7_1
-	L7_1 = L7_1.MoveTo
-	L9_1 = L4_1.HumanoidRootPart
-	L9_1 = L9_1.Position
-	L7_1(L8_1, L9_1)
-	L7_1 = thing
-	L7_1 = L7_1.Humanoid
-	L8_1 = L7_1
-	L7_1 = L7_1.Move
-	L9_1 = game
-	L9_1 = L9_1.Players
-	L9_1 = L9_1.LocalPlayer
-	L9_1 = L9_1.Character
-	L9_1 = L9_1.Humanoid
-	L9_1 = L9_1.MoveDirection
-	L10_1 = false
-	L7_1(L8_1, L9_1, L10_1)
-	L7_1 = thing
-	L7_1 = L7_1.HumanoidRootPart
-	L7_1.Anchored = false
-	L8_1 = L4_1
-	L7_1 = L4_1.FindFirstChild
-	L9_1 = "Left Arm"
-	L7_1 = (L7_1(L8_1, L9_1))
-	L9_1 = L4_1
-	L8_1 = L4_1.FindFirstChild
-	L10_1 = "Right Arm"
-	L8_1 = (L8_1(L9_1, L10_1))
-	L10_1 = L4_1
-	L9_1 = L4_1.FindFirstChild
-	L11_1 = "Torso"
-	L9_1 = (L9_1(L10_1, L11_1))
-	L11_1 = L4_1
-	L10_1 = L4_1.FindFirstChild
-	L12_1 = "Left Leg"
-	L10_1 = (L10_1(L11_1, L12_1))
-	L12_1 = L4_1
-	L11_1 = L4_1.FindFirstChild
-	L13_1 = "Right Leg"
-	L11_1 = (L11_1(L12_1, L13_1))
-	L12_1 = L4_1["Right Arm"]
-	L12_1.Anchored = false
-	L12_1 = L4_1.Torso
-	L12_1.Anchored = false
-	L12_1 = L4_1["Left Arm"]
-	L12_1.Anchored = false
-	L12_1 = L4_1["Right Leg"]
-	L12_1.Anchored = false
-	L12_1 = L4_1["Left Leg"]
-	L12_1.Anchored = false
-	L12_1 = thing
-	L12_1 = L12_1.Humanoid
-	L13_1 = math
-	L13_1 = L13_1.huge
-	L12_1.MaxHealth = L13_1
-	L12_1 = thing
-	L12_1 = L12_1.Humanoid
-	L13_1 = math
-	L13_1 = L13_1.huge
-	L12_1.Health = L13_1
-	L12_1 = thing
-	L12_1 = L12_1.Head
-	L12_1 = L12_1.face
-	L12_1.Texture = "rbxassetid//0"
-	L12_1 = game
-	L12_1 = L12_1.Players
-	L12_1 = L12_1.LocalPlayer
-	L12_1 = L12_1.Character
-	L12_1 = L12_1.HumanoidRootPart
-	L12_1.Anchored = true
-	L12_1 = game
-	L12_1 = L12_1.Players
-	L12_1 = L12_1.LocalPlayer
-	L12_1 = L12_1.Character
-	L12_1 = L12_1.Humanoid
-	Humanoid = L12_1
-	L12_1 = L4_1.HumanoidRootPart
-	L12_1 = L12_1.RootJoint
-	L13_1 = L12_1
-	L12_1 = L12_1.Destroy
-	L12_1(L13_1)
-	L12_1 = L5_1.InputBegan
-	L13_1 = L12_1
-	L12_1 = L12_1.Connect
-	function L14_1(A0_2, A1_2)
-		local L2_2, L3_2
-		A0_2 = A0_2
-		L2_2 = A0_2.KeyCode
-		L3_2 = Enum
-		L3_2 = L3_2.KeyCode
-		L3_2 = L3_2.Space
-		if L2_2 == L3_2 and A1_2 == false then
-			L2_2 = thing
-			L2_2 = L2_2.Humanoid
-			L2_2.Jump = true
-		end
-	end
-	L12_1(L13_1, L14_1)
-	L12_1 = game
-	L12_1 = L12_1.Workspace
-	L12_1 = L12_1.CurrentCamera
-	L13_1 = thing
-	L13_1 = L13_1.Humanoid
-	L12_1.CameraSubject = L13_1
-	L12_1 = pairs
-	L13_1 = thing
-	L14_1 = L13_1
-	L13_1 = L13_1.GetChildren
-	L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1 = L13_1(L14_1)
-	L12_1, L13_1, L14_1 = L12_1(L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1)
-	for L15_1, L16_1 in L12_1, L13_1, L14_1 do
-		L18_1 = L16_1
-		L17_1 = L16_1.IsA
-		L19_1 = "Part"
-		L17_1 = (L17_1(L18_1, L19_1))
-		if L17_1 then
-			L17_1 = L16_1.Name
-			if L17_1 == "Head" then
-				L16_1.Transparency = 1
-			else
-				L16_1.Transparency = 1
-			end
-		end
-	end
-	L12_1 = game
-	L13_1 = L12_1
-	L12_1 = L12_1.GetService
-	L14_1 = "RunService"
-	L12_1 = (L12_1(L13_1, L14_1))
-	L12_1 = L12_1.Stepped
-	L13_1 = L12_1
-	L12_1 = L12_1.Connect
-	function L14_1()
-		local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-		L0_2 = L0_2
-		L0_2 = thing
-		L0_2 = L0_2.Humanoid
-		L1_2 = L0_2
-		L0_2 = L0_2.Move
-		L2_2 = game
-		L2_2 = L2_2.Players
-		L2_2 = L2_2.LocalPlayer
-		L2_2 = L2_2.Character
-		L3_2 = L2_2
-		L2_2 = L2_2.WaitForChild
-		L4_2 = "Humanoid"
-		L2_2 = (L2_2(L3_2, L4_2))
-		L2_2 = L2_2.MoveDirection
-		L3_2 = false
-		L0_2(L1_2, L2_2, L3_2)
-		L0_2 = Humanoid
-		L1_2 = L0_2
-		L0_2 = L0_2.GetPlayingAnimationTracks
-		L0_2 = (L0_2(L1_2))
-		L1_2 = pairs
-		L2_2 = L0_2
-		L1_2, L2_2, L3_2 = L1_2(L2_2)
-		for L4_2, L5_2 in L1_2, L2_2, L3_2 do
-			L7_2 = L5_2
-			L6_2 = L5_2.Stop
-			L6_2(L7_2)
-		end
-		L1_2 = pairs
-		L2_2 = L4_1
-		L3_2 = L2_2
-		L2_2 = L2_2.GetChildren
-		L2_2, L3_2, L4_2, L5_2, L6_2, L7_2 = L2_2(L3_2)
-		L1_2, L2_2, L3_2 = L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
-		for L4_2, L5_2 in L1_2, L2_2, L3_2 do
-			L6_2 = pcall
-			function L7_2()
-				local L0_3, L1_3
-				L0_3 = L0_3
-				L0_3 = L5_2
-				L0_3 = L0_3.ClassName
-				if L0_3 == "Part" then
-					L0_3 = L5_2
-					L0_3.CanCollide = false
-				else
-					L0_3 = L5_2
-					L0_3 = L0_3.ClassName
-					if L0_3 == "Model" then
-						L0_3 = L5_2
-						L0_3 = L0_3.Head
-						L0_3.CanCollide = false
-					end
-				end
-			end
-			L6_2(L7_2)
-		end
-	end
-	L12_1(L13_1, L14_1)
-	L12_1 = wait
-	L12_1()
-	L12_1 = Instance
-	L12_1 = L12_1.new
-	L13_1 = "BodyVelocity"
-	L12_1 = (L12_1(L13_1))
-	L12_1.Name = "funny"
-	L13_1 = game
-	L13_1 = L13_1.Players
-	L13_1 = L13_1.LocalPlayer
-	L13_1 = L13_1.Character
-	L14_1 = L13_1
-	L13_1 = L13_1.WaitForChild
-	L15_1 = "Left Leg"
-	L13_1 = (L13_1(L14_1, L15_1))
-	L12_1.Parent = L13_1
-	L13_1 = Instance
-	L13_1 = L13_1.new
-	L14_1 = "BodyVelocity"
-	L13_1 = (L13_1(L14_1))
-	L13_1.Name = "funny"
-	L14_1 = game
-	L14_1 = L14_1.Players
-	L14_1 = L14_1.LocalPlayer
-	L14_1 = L14_1.Character
-	L15_1 = L14_1
-	L14_1 = L14_1.WaitForChild
-	L16_1 = "Right Leg"
-	L14_1 = (L14_1(L15_1, L16_1))
-	L13_1.Parent = L14_1
-	L14_1 = Instance
-	L14_1 = L14_1.new
-	L15_1 = "BodyVelocity"
-	L14_1 = (L14_1(L15_1))
-	L14_1.Name = "funny"
-	L15_1 = game
-	L15_1 = L15_1.Players
-	L15_1 = L15_1.LocalPlayer
-	L15_1 = L15_1.Character
-	L16_1 = L15_1
-	L15_1 = L15_1.WaitForChild
-	L17_1 = "Right Arm"
-	L15_1 = (L15_1(L16_1, L17_1))
-	L14_1.Parent = L15_1
-	L15_1 = Instance
-	L15_1 = L15_1.new
-	L16_1 = "BodyVelocity"
-	L15_1 = (L15_1(L16_1))
-	L15_1.Name = "funny"
-	L16_1 = game
-	L16_1 = L16_1.Players
-	L16_1 = L16_1.LocalPlayer
-	L16_1 = L16_1.Character
-	L17_1 = L16_1
-	L16_1 = L16_1.WaitForChild
-	L18_1 = "Left Arm"
-	L16_1 = (L16_1(L17_1, L18_1))
-	L15_1.Parent = L16_1
-	L16_1 = Instance
-	L16_1 = L16_1.new
-	L17_1 = "BodyVelocity"
-	L16_1 = (L16_1(L17_1))
-	L16_1.Name = "funny"
-	L17_1 = game
-	L17_1 = L17_1.Players
-	L17_1 = L17_1.LocalPlayer
-	L17_1 = L17_1.Character
-	L18_1 = L17_1
-	L17_1 = L17_1.WaitForChild
-	L19_1 = "Torso"
-	L17_1 = (L17_1(L18_1, L19_1))
-	L16_1.Parent = L17_1
-	L17_1 = Instance
-	L17_1 = L17_1.new
-	L18_1 = "BodyVelocity"
-	L17_1 = (L17_1(L18_1))
-	L17_1.Name = "funny"
-	L18_1 = game
-	L18_1 = L18_1.Players
-	L18_1 = L18_1.LocalPlayer
-	L18_1 = L18_1.Character
-	L19_1 = L18_1
-	L18_1 = L18_1.WaitForChild
-	L20_1 = "HumanoidRootPart"
-	L18_1 = (L18_1(L19_1, L20_1))
-	L17_1.Parent = L18_1
-	L18_1 = Instance
-	L18_1 = L18_1.new
-	L19_1 = "BodyVelocity"
-	L18_1 = (L18_1(L19_1))
-	L18_1.Name = "funny"
-	L19_1 = game
-	L19_1 = L19_1.Players
-	L19_1 = L19_1.LocalPlayer
-	L19_1 = L19_1.Character
-	L20_1 = L19_1
-	L19_1 = L19_1.WaitForChild
-	L21_1 = "Head"
-	L19_1 = (L19_1(L20_1, L21_1))
-	L18_1.Parent = L19_1
-	L19_1 = game
-	L20_1 = L19_1
-	L19_1 = L19_1.WaitForChild
-	L21_1 = "Run Service"
-	L19_1 = (L19_1(L20_1, L21_1))
-	L19_1 = L19_1.Heartbeat
-	L20_1 = L19_1
-	L19_1 = L19_1.Connect
-	function L21_1()
-		local L0_2, L1_2, L2_2, L3_2, L4_2
-		L0_2 = L0_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Left Leg"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L1_2 = game
-		L1_2 = L1_2.Players
-		L1_2 = L1_2.LocalPlayer
-		L1_2 = L1_2.Character
-		L1_2 = L1_2.Raw
-		L2_2 = L1_2
-		L1_2 = L1_2.WaitForChild
-		L3_2 = "Left Leg"
-		L1_2 = (L1_2(L2_2, L3_2))
-		L1_2 = L1_2.CFrame
-		L0_2.CFrame = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Left Leg"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.Velocity = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Left Leg"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.MaxForce = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Right Leg"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L1_2 = game
-		L1_2 = L1_2.Players
-		L1_2 = L1_2.LocalPlayer
-		L1_2 = L1_2.Character
-		L1_2 = L1_2.Raw
-		L2_2 = L1_2
-		L1_2 = L1_2.WaitForChild
-		L3_2 = "Right Leg"
-		L1_2 = (L1_2(L2_2, L3_2))
-		L1_2 = L1_2.CFrame
-		L0_2.CFrame = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Right Leg"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.Velocity = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Right Leg"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.MaxForce = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Left Arm"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L1_2 = game
-		L1_2 = L1_2.Players
-		L1_2 = L1_2.LocalPlayer
-		L1_2 = L1_2.Character
-		L1_2 = L1_2.Raw
-		L2_2 = L1_2
-		L1_2 = L1_2.WaitForChild
-		L3_2 = "Left Arm"
-		L1_2 = (L1_2(L2_2, L3_2))
-		L1_2 = L1_2.CFrame
-		L0_2.CFrame = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Left Arm"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.Velocity = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Left Arm"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.MaxForce = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Right Arm"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L1_2 = game
-		L1_2 = L1_2.Players
-		L1_2 = L1_2.LocalPlayer
-		L1_2 = L1_2.Character
-		L1_2 = L1_2.Raw
-		L2_2 = L1_2
-		L1_2 = L1_2.WaitForChild
-		L3_2 = "Right Arm"
-		L1_2 = (L1_2(L2_2, L3_2))
-		L1_2 = L1_2.CFrame
-		L0_2.CFrame = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Right Arm"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.Velocity = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Right Arm"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.MaxForce = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Torso"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L1_2 = game
-		L1_2 = L1_2.Players
-		L1_2 = L1_2.LocalPlayer
-		L1_2 = L1_2.Character
-		L1_2 = L1_2.Raw
-		L2_2 = L1_2
-		L1_2 = L1_2.WaitForChild
-		L3_2 = "Torso"
-		L1_2 = (L1_2(L2_2, L3_2))
-		L1_2 = L1_2.CFrame
-		L0_2.CFrame = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Torso"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.Velocity = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Torso"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.MaxForce = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "HumanoidRootPart"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L1_2 = game
-		L1_2 = L1_2.Players
-		L1_2 = L1_2.LocalPlayer
-		L1_2 = L1_2.Character
-		L1_2 = L1_2.Raw
-		L2_2 = L1_2
-		L1_2 = L1_2.WaitForChild
-		L3_2 = "HumanoidRootPart"
-		L1_2 = (L1_2(L2_2, L3_2))
-		L1_2 = L1_2.CFrame
-		L0_2.CFrame = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "HumanoidRootPart"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.Velocity = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "HumanoidRootPart"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.MaxForce = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Head"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L1_2 = game
-		L1_2 = L1_2.Players
-		L1_2 = L1_2.LocalPlayer
-		L1_2 = L1_2.Character
-		L1_2 = L1_2.Raw
-		L2_2 = L1_2
-		L1_2 = L1_2.WaitForChild
-		L3_2 = "Head"
-		L1_2 = (L1_2(L2_2, L3_2))
-		L1_2 = L1_2.CFrame
-		L0_2.CFrame = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Head"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.Velocity = L1_2
-		L0_2 = game
-		L0_2 = L0_2.Players
-		L0_2 = L0_2.LocalPlayer
-		L0_2 = L0_2.Character
-		L1_2 = L0_2
-		L0_2 = L0_2.WaitForChild
-		L2_2 = "Head"
-		L0_2 = (L0_2(L1_2, L2_2))
-		L0_2 = L0_2.funny
-		L1_2 = Vector3
-		L1_2 = L1_2.new
-		L2_2 = 69420
-		L3_2 = 69420
-		L4_2 = 69420
-		L1_2 = (L1_2(L2_2, L3_2, L4_2))
-		L0_2.MaxForce = L1_2
-	end
-	L19_1(L20_1, L21_1)
+if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+  workspace.FallenPartsDestroyHeight = -math.huge
+  wait()
+  thing = game:GetObjects("rbxassetid://5904819435")[1]
+  thing.Name = "Raw"
+  thing.Parent = game.Players.LocalPlayer.Character
+  game.Players.LocalPlayer.Character.Animate:Clone().Parent = thing
+  for fm, fo in pairs(game.Players.LocalPlayer.Character.Animate:GetChildren()) do
+    fo:Clone().Parent = game.Players.LocalPlayer.Character.Animate:Clone()
+  end
+  game.Players.LocalPlayer.Character.Torso["Right Shoulder"]:Destroy()
+  game.Players.LocalPlayer.Character.Torso["Left Shoulder"]:Destroy()
+  game.Players.LocalPlayer.Character.Torso["Right Hip"]:Destroy()
+  game.Players.LocalPlayer.Character.Torso["Left Hip"]:Destroy()
+  thing:MoveTo(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+  thing.Humanoid:Move(game.Players.LocalPlayer.Character.Humanoid.MoveDirection, false)
+  thing.HumanoidRootPart.Anchored = false
+  game.Players.LocalPlayer.Character["Right Arm"].Anchored = false
+  game.Players.LocalPlayer.Character.Torso.Anchored = false
+  game.Players.LocalPlayer.Character["Left Arm"].Anchored = false
+  game.Players.LocalPlayer.Character["Right Leg"].Anchored = false
+  game.Players.LocalPlayer.Character["Left Leg"].Anchored = false
+  thing.Humanoid.MaxHealth = math.huge
+  thing.Humanoid.Health = math.huge
+  thing.Head.face.Texture = "rbxassetid//0"
+  game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+  Humanoid = game.Players.LocalPlayer.Character.Humanoid
+  game.Players.LocalPlayer.Character.HumanoidRootPart.RootJoint:Destroy()
+  game:GetService("UserInputService").InputBegan:Connect(function(a, b)
+    a = a
+    if a.KeyCode == Enum.KeyCode.Space and b == false then
+      thing.Humanoid.Jump = true
+    end
+  end)
+  game.Workspace.CurrentCamera.CameraSubject = thing.Humanoid
+  for fs, ft in pairs(thing:GetChildren()) do
+    if ft:IsA("Part") then
+      if ft.Name == "Head" then
+        ft.Transparency = 1
+      else
+        ft.Transparency = 1
+      end
+    end
+  end
+  game:GetService("RunService").Stepped:Connect(function()
+    thing.Humanoid:Move(game.Players.LocalPlayer.Character:WaitForChild("Humanoid").MoveDirection, false)
+    for fe, fg in pairs((Humanoid:GetPlayingAnimationTracks())) do
+      fg:Stop()
+    end
+    for fe, fg in pairs(va:GetChildren()) do
+      pcall(function()
+        if va.ClassName == "Part" then
+          va.CanCollide = false
+        elseif va.ClassName == "Model" then
+          va.Head.CanCollide = false
+        end
+      end)
+    end
+  end)
+  wait()
+  Instance.new("BodyVelocity").Name = "funny"
+  Instance.new("BodyVelocity").Parent = game.Players.LocalPlayer.Character:WaitForChild("Left Leg")
+  Instance.new("BodyVelocity").Name = "funny"
+  Instance.new("BodyVelocity").Parent = game.Players.LocalPlayer.Character:WaitForChild("Right Leg")
+  Instance.new("BodyVelocity").Name = "funny"
+  Instance.new("BodyVelocity").Parent = game.Players.LocalPlayer.Character:WaitForChild("Right Arm")
+  Instance.new("BodyVelocity").Name = "funny"
+  Instance.new("BodyVelocity").Parent = game.Players.LocalPlayer.Character:WaitForChild("Left Arm")
+  Instance.new("BodyVelocity").Name = "funny"
+  Instance.new("BodyVelocity").Parent = game.Players.LocalPlayer.Character:WaitForChild("Torso")
+  Instance.new("BodyVelocity").Name = "funny"
+  Instance.new("BodyVelocity").Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+  Instance.new("BodyVelocity").Name = "funny"
+  Instance.new("BodyVelocity").Parent = game.Players.LocalPlayer.Character:WaitForChild("Head")
+  game:WaitForChild("Run Service").Heartbeat:Connect(function()
+    game.Players.LocalPlayer.Character:WaitForChild("Left Leg").CFrame = game.Players.LocalPlayer.Character.Raw:WaitForChild("Left Leg").CFrame
+    game.Players.LocalPlayer.Character:WaitForChild("Left Leg").funny.Velocity = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Left Leg").funny.MaxForce = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Right Leg").CFrame = game.Players.LocalPlayer.Character.Raw:WaitForChild("Right Leg").CFrame
+    game.Players.LocalPlayer.Character:WaitForChild("Right Leg").funny.Velocity = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Right Leg").funny.MaxForce = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Left Arm").CFrame = game.Players.LocalPlayer.Character.Raw:WaitForChild("Left Arm").CFrame
+    game.Players.LocalPlayer.Character:WaitForChild("Left Arm").funny.Velocity = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Left Arm").funny.MaxForce = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Right Arm").CFrame = game.Players.LocalPlayer.Character.Raw:WaitForChild("Right Arm").CFrame
+    game.Players.LocalPlayer.Character:WaitForChild("Right Arm").funny.Velocity = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Right Arm").funny.MaxForce = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Torso").CFrame = game.Players.LocalPlayer.Character.Raw:WaitForChild("Torso").CFrame
+    game.Players.LocalPlayer.Character:WaitForChild("Torso").funny.Velocity = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Torso").funny.MaxForce = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = game.Players.LocalPlayer.Character.Raw:WaitForChild("HumanoidRootPart").CFrame
+    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").funny.Velocity = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").funny.MaxForce = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Head").CFrame = game.Players.LocalPlayer.Character.Raw:WaitForChild("Head").CFrame
+    game.Players.LocalPlayer.Character:WaitForChild("Head").funny.Velocity = Vector3.new(69420, 69420, 69420)
+    game.Players.LocalPlayer.Character:WaitForChild("Head").funny.MaxForce = Vector3.new(69420, 69420, 69420)
+  end)
 end
